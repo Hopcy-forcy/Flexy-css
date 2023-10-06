@@ -2,7 +2,7 @@
 
 # Typographie
   
-  ## couleur de text
+  couleur de text
   ```html
   <h1 @style="color:red">Flexy css </h1>
 
