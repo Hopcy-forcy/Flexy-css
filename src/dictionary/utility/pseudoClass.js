@@ -20,7 +20,8 @@ export const pseudoClass = {
     "}":"}",
     "(":"(",
     ")":")",
-    "#":"#"
+    "#":"#",
+    "$":"$"
 
 }
 
@@ -46,6 +47,7 @@ export const changePseudoClass = {
     "}":"bracket_end_",
     "(":"(",
     ")":")",
-    "#":"id_"
+    "#":"id_",
+    "$":"_var_"
 }
 

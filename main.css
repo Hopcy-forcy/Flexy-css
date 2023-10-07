@@ -1,0 +1,54 @@
+
+*,::after,::before{
+    additive-symbols: var(--symbols,unset);
+    
+    accent-color: var(--accent,unset);
+
+    align-self: var(--seff,unset);
+    align-items: var(--items,unset);
+    align-content: var(--content,unset);
+
+    alt: var(--title,unset);
+    
+    animation: var(--anime,unset);
+    animation-duration: var(--anime-time,unset);
+    animation-name: var(--anime-name,unset);
+    animation-timing-function: var(--anime-fn,unset);
+    animation-delay: var(--anime-delay,unset);
+    animation-fill-mode: var(--anime-mode,unset);
+    animation-iteration-count: var(--anime-count,unset);
+    animation-direction: var(--anime-direct,unset);
+    animation-play-state: var(--anime-state,unset);
+
+    appearance: var(--appear,unset);
+    aspect-ratio: var(--aspect,unset);
+    
+    
+    backface-visibility: var(--backface,unset);
+
+    background-attachment:var(--bg-att,unset);
+    background-color: var(--bg-color,unset);
+    background-image: var(--bg-img,--img,unset);
+    background-position: var(--bg-pos,unset);
+    background-position-x: var(--bg-x,unset);
+    background-position-y: var(--bg-y,unset);
+    background-repeat: var(--bg-rep,unset);
+    background-size: var(--bg-size,unset);
+    background-clip: var(--bg-clip,unset);
+    background-blend-mode: var(--bg-blend,unset);
+    background: var(--bg);
+    
+    margin-top: var(--mt,0px);
+    margin-bottom: var(--mb,0px);
+    margin-left: var(--ml,0px);
+    margin-right: var(--mr,0px);
+    margin-inline: var(--mx,0px);
+    /* margin : var(--m); */
+
+    padding : var(--p, 0px);
+    padding-inline: var(--px,0px);
+    padding-top: var(--pt,--py,0px);
+    padding-bottom: var(--pb,--py,0px);
+    padding-left: var(--pl,0px);
+    padding-right: var(--pr,0px);
+}

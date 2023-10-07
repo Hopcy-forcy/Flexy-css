@@ -5,6 +5,7 @@ export const flexyAttr = {
     "@after": "::after",
     // children
     "@all": ">*",
+    "@all-hover": ">*:hover",
     "@all-before": ">*::before",
     "@all-after": ">*::after",
     // 
@@ -14,7 +15,7 @@ export const flexyAttr = {
     // 
     "@even": ">*:nth-child(even)",
     "@even-before": ">*:nth-child(even)::before",
-    "@even-after": ">*:nth-child(even)::after",
+    "@even-after": ">*::after:nth-child(even)",
     // last child
     "@last": ">*:nth-last-child(1)",
     "@last-after": ">*:nth-last-child(1)::after",

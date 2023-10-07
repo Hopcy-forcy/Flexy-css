@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test</title>
     <script type="module" src="./src/main.js"></script>
 </head>
-<body
-@first ="bg:#55f6 w:300px h:300px" 
-@style="bg:#fff d:grid place-content:center h:100vh">
-    <div @style ="d:grid place-content:center letter:uppercase font:sans-serif color:#55fd weight:bold bl:4px solid blue"> flexy css : 0.1 <span @style="size:60% bg:#4b02c0 w:fit-content pt:3px pb:3px px:5px radius:5px color:white">Beta</span></div>
+
+<body @odd="radius:20px" @even="radius:100px bg-color:white" @style=" $bg:rgb(201, 212, 103) items:center  content:center d:flex flex-pos: column gap:50px color:blue bg:$bg">
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:green "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:red "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:navy "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:purple "></div>
+    <section @style=""></section>
 </body>
 
 </html>
