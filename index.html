@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" >
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <script type="module" src="./src/main.js"></script>
+</head>
+
+<body @odd="radius:20px" @even="radius:100px bg-color:white" @style=" $bg:rgb(201, 212, 103) items:center  content:center d:flex flex-pos: column gap:50px color:blue bg:$bg">
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:green "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:red "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:navy "></div>
+    <section @style="h:200px w:200px "></section>
+    <div 
+    @hover ="bg:yellow cursor:pointer"
+    @style="w:200px h:200px bg:purple "></div>
+    <section @style=""></section>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="../../main.js"></script>
+    <style>
+        :root{
+            --white : #ffffff;
+            --orange: #972E00;
+            --oranged: #FE4E00;
+            --btnp : 10px 20px;
+            --radbtn :0px 12px;
+            --sizebtn: 1em;
+            --smBlur :blur(200px);
+            --textSh: 1px 1px 2px #11101098;
+            --img1:url( "./assets/Images/img/1.png");
+            --img2:url( "./assets/Images/img/2.png");
+            --img3:url( "./assets/Images/img/3.png");
+            --img4:url( "./assets/Images/img/4.png");
+            --img5:url( "./assets/Images/img/5.png");
+            --img6:url( "./assets/Images/img/6.png");
+            --img7:url( "./assets/Images/img/7.png");
+            
+        }
+    </style>
+</head>
+<body @style="font:sans-serif">
+    <header @style="d:flex  jus-content:space-between items:center px: 5.5rem pt:10px pb:10px  pos:sticky top:0px z:20 bg-color:#fffa bg-filter:$smBlur">
+        <div @style="w:fit-content ">
+            <img src="./assets/Images/Me2U Icons PNG/me2u__logo.png" alt="" @style="w:150px" srcset="">
+        </div>
+        <nav @style="ml:20% d:flex h:fit-content d:flex gap:50px" >
+            <ul 
+                @all-hover="color: $oranged "
+                @style="list-type:none d:flex gap:40px  items:center"
+                @all="pos:relative cursor:pointer weight:530 font:sans-serif"
+                @before ="pos:absolute top:0px width:100% h:20px bg:$oranged"
+            >
+                <li >Accueil</li>
+                <li>Blog</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+                <li>
+                    <select name="" id="" @style="bg:transparent size:inherit cursor:pointer">
+                        <option value="">Se connecter</option>
+                        <option value="">Se déconnecter</option>
+                    </select>
+                </li>
+            </ul>
+            <button @style="bg:$oranged p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$white">Télécharger l'appli</button>
+        </nav>
+    </header>
+    <main>
+
+        <div @all = "w:50% h:100% " @style="d:flex jus-content:center bg:red h:100vh img:$img1 $img:100vw 100vh bg-size:$img">
+            <div @style="p:5.5rem bg-color:$orange bg-blend:multiply img:$img1 bg-size:$img">
+
+                <h1 @style="size:4rem color:$oranged line-h:60px weight:1000 text-sh:$textSh">Plus qu'un simple service*, une expérience inoubliable</h1>
+                <p @style="color:$white mt:2rem mb:2rem">
+                    Bienvenue sur notre site de rencontre 100% Congolais !
+                    Bénéficiez d'un réseau de personnes célibataires, près
+                    de chez vous. Créez votre compte et découvrez quelle
+                    personne correspond à votre profil, au sein de votre
+                    voisinage. Profitez de notre messagerie et établissez le
+                    contact en toute confidentialité.
+                </p>
+                <button @style=" weight:900  bg:$white p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$oranged">Télécharger l'application</button>
+                
+            </div>
+            <div @style="d:flex jus-content:end items:end pb:1.5rem">
+                <p @style="p:0.75rem w:fit-content bg:#000a size:11.5pt color:$white">* Nos services sont réservés principalement aux adultes âgés de 18 à 45 ans.</p>
+            </div>
+        </div>
+        <hr @style="bg:$oranged radius:100px w:12rem h:3px m:5rem auto"/>
+
+
+        <div @all = "w:50% h:100% " @style="d:flex jus-content:center bg:red h:100vh img:$img2 $img:100vw 100vh bg-size:$img">
+            <div @style=" d:flex  flex-pos:column items:center jus-content:space-evenly align:center bg:$orange bg-blend:multiply img:$img2 bg-size:$img $bgpos: -25vw 0px bg-pos:$bgpos">
+
+                <h1 @style="bl:8px solid white w:50% size:2rem color:$white">Découvrez qui est votre genre</h1>
+                <p @style="color:$white w:45%">
+                    Accéder à plus d'un million de profils
+                    disponibles, de Brazzaville à Pointe-Noire.
+                    Trouver la personnalité idéale pour vous, à
+                    l'intérieur de notre catalogue pour hommes
+                    et pour femmes.
+                </p>
+                <button @style="weight:900 bg:$white p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$oranged">Voir le catalogue</button>
+                
+            </div>
+        </div>
+        <hr @style="bg:$oranged radius:100px w:12rem h:3px m:5rem auto"/>
+
+
+        <div @all = "w:50% h:100% " @style="d:flex jus-content:center bg:red h:100vh img:$img3 $img:100vw 100vh bg-size:$img">
+            <div @style=" d:flex  flex-pos:column items:center jus-content:space-evenly align:center bg:$orange bg-blend:multiply img:$img3 bg-size:$img $bgpos: -25vw 0px bg-pos:$bgpos">
+
+                <h1 @style="bl:8px solid white w:50% size:2rem color:$white">Créez votre profil</h1>
+                <p @style="color:$white w:45%">
+                    Vous n'avez pas que des compétences
+                    professionnelles. Vous êtes, avant tout, un
+                    être humain !<br>
+                    Faites connaître et briller vos qualités
+                    individuelles sur l'ensemble du territoire
+                    national.<br>
+                    Permettez à la communauté Me2U de
+                    découvrir la personne inspirante que vous
+                    êtes, parce que vous le valez bien !
+                </p>
+                <button @style="weight:900 bg:$white p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$oranged">Remplir le formulaire</button>
+                
+            </div>
+        </div>
+        <hr @style="bg:$oranged radius:100px w:12rem h:3px m:5rem auto"/>
+
+
+
+        <div @all = "w:50% h:100% " @style="d:flex jus-content:center bg:red h:100vh img:$img5 $img:100vw 100vh bg-size:$img">
+            <div @style=" d:flex  flex-pos:column items:center jus-content:space-evenly align:center bg:$orange bg-blend:multiply img:$img5 bg-size:$img $bgpos: -25vw 0px bg-pos:$bgpos">
+
+                <h1 @style="bl:8px solid white w:50% size:2rem color:$white">Notre service client est là pour vous</h1>
+                <p @style="color:$white w:45%">
+                    Nous veillons constamment au bien-être de
+                    chacun de nos membres, à travers un
+                    service décent, sécurisé, réglementé,
+                    éducatif et adapté à notre communauté en
+                    ligne.
+                </p>
+                <button @style="weight:900 bg:$white p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$oranged">Contactez-nous</button>
+                
+            </div>
+        </div>
+        <hr @style="bg:$oranged radius:100px w:12rem h:3px m:5rem auto"/>
+
+
+
+        <div @all = "w:50% h:100% " @style="d:flex jus-content:center bg:red h:100vh img:$img7 $img:100vw 100vh bg-size:$img">
+            <div @style=" d:flex  flex-pos:column items:center jus-content:space-evenly align:center bg:$orange bg-blend:multiply img:$img7 bg-size:$img $bgpos: -25vw 0px bg-pos:$bgpos">
+
+                <h1 @style="bl:8px solid white w:63% pr:20px size:2rem color:$white">Ajoutez une nouvelle page à votre histoire</h1>
+                <p @style="color:$white w:45%">
+                    Ne laissez plus vos rencontres au hasard !
+                    Grâce à Me2U, découvrez ce que vous
+                    voulez et affirmez-le devant d'autres
+                    personnes qui savent également ce qu'elles
+                    veulent.
+                </p>
+                <button @style="weight:900 bg:$white p:$btnp radius:$radbtn size:$sizebtn cursor:pointer color:$oranged">Télécharger l'application</button>
+                
+            </div>
+        </div>
+        <hr @style=" radius:100px w:12rem h:3px m:5rem auto"/>
+
+
+
+        
+    </main>
+</body>
+</html>
